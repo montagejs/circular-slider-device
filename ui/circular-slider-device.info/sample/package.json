@@ -1,0 +1,13 @@
+{
+    "name": "circular-slider-device-sample",
+    "version": "1.0.0",
+    "private": false,
+    "dependencies": {
+        "montage": "*",
+        "circular-slider-device": "*"
+    },
+    "mappings": {
+        "montage": "../../../node_modules/montage",
+        "circular-slider-device": "../../../"
+    }
+}

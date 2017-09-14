@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="circular-slider-device.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "prototype": "ui/circular-slider-device.reel",
+            "properties": {
+                "element": {"#": "Den"},
+                "_rotateComposer": {"@": "rotateComposer"},
+                "blackBar": {"#": "blackBar"},
+                "blueFadingBar": {"#": "blueFadingBar"},
+                "iconElement": {"#": "icon"},
+                "leftBlueBar": {"#": "leftBlueBar"},
+                "leftDigit": {"#": "leftDigit"},
+                "leftRedBar": {"#": "leftRedBar"},
+                "redFadingBar": {"#": "redFadingBar"},
+                "rightBlueBar": {"#": "rightBlueBar"},
+                "rightDigit": {"#": "rightDigit"},
+                "rightRedBar": {"#": "rightRedBar"},
+                "whiteBar": {"#": "whiteBar"},
+                "activationArea": {"#": "activationArea"}
+            }
+        },
+        "rotateComposer": {
+            "prototype": "montage/composer/rotation-composer",
+            "properties": {
+                "component": {"@": "owner"},
+                "element": {"#": "activationArea"},
+                "unit": "degrees"
+            },
+            "listeners": [
+                {
+                    "type": "rotate",
+                    "listener": {"@": "owner"}
+                },
+                {
+                    "type": "rotateEnd",
+                    "listener": {"@": "owner"}
+                }
+            ]
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="Den" class="Den">
+        <div data-montage-id="activationArea" class="Den-activation-area"></div>
+        <div data-montage-id="leftRedBar" class="Den-left-red-bar"></div>
+        <div data-montage-id="rightRedBar" class="Den-right-red-bar"></div>
+        <div data-montage-id="leftBlueBar" class="Den-left-blue-bar"></div>
+        <div data-montage-id="rightBlueBar" class="Den-right-blue-bar"></div>
+        <div data-montage-id="blackBar" class="Den-black-bar"></div>
+        <div data-montage-id="icon" class="Den-icon"></div>
+        <div data-montage-id="whiteBar" class="Den-white-bar"></div>
+        <div data-montage-id="redFadingBar" class="Den-red-fading-bar"></div>
+        <div data-montage-id="blueFadingBar" class="Den-blue-fading-bar"></div>
+        <div class="Den-left-digit-clip">
+            <div data-montage-id="leftDigit" class="Den-left-digit"></div>
+        </div>
+        <div class="Den-right-digit-clip">
+            <div data-montage-id="rightDigit" class="Den-right-digit"></div>
+        </div>
+    </div>
+</body>
+</html>

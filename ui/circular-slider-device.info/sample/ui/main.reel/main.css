@@ -1,0 +1,34 @@
+html, body, .Main {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
+}
+
+.Main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    margin-top: 20px;
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+}
+
+.montage-Text {
+    display: block;
+    font-size: 13px;
+    color: #666;
+}
+
+.Thermostat {
+    width: 346px;
+    height: 346px;
+    transition: transform .2s;
+}

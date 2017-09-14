@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/montage-serialization">
+        {
+            "owner": {
+                "values": {
+                    "element": {"#": "main"}
+                }
+            },
+
+            "circular-slider-device": {
+                "prototype": "circular-slider-device/ui/circular-slider-device.reel",
+                "properties": {
+                    "element": {"#": "circular-slider-device"},
+                    "src": "den.png",
+                    "value": 72.5,
+                    "min": 51,
+                    "max": 93
+                }
+            },
+
+            "text": {
+                "prototype": "montage/ui/text.reel",
+                "values": {
+                    "element": {"#": "text"},
+                    "value": {"<-": "@owner.message || 'Change the temperature'"}
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div data-montage-id="main" class="Main">
+        <header>Circular Slider Device Sample</header>
+        <section class="buttons">
+            <span data-montage-id="text"></span>
+            <br>            
+            <div data-montage-id="circular-slider-device" class="Thermostat"></div>
+        </section>
+    </div>
+</body>
+</html>

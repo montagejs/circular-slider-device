@@ -1,0 +1,144 @@
+.Den {
+    position: relative;
+    /* width: 346px;
+    height: 346px; */
+}
+.Den-activation-area {
+    position: absolute;
+    z-index: 3;
+    top: 3.468208092485549%;
+    left: 10.404624277456647%;
+    width: 79.76878612716763%;
+    height: 79.76878612716763%;
+    border-radius: 39.884393063583815%;
+}
+.Den:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(nest-overlay.png);
+    background-size: 100% 100%;
+}
+.Den:before {
+    content: "";
+    position: absolute;
+    left: 28.034682080924855%;
+    top: 21.38728323699422%;
+    background: black;
+    width: 44.508670520231214%;
+    height: 35.838150289017341%;
+}
+.Den-left-red-bar,
+.Den-right-red-bar,
+.Den-left-blue-bar,
+.Den-right-blue-bar,
+.Den-black-bar {
+    position: absolute;
+    left: 27.745664739884393%;
+    top: 21.098265895953757%;
+    width: 44.942196531791908%;
+    height: 22.471098265895954%;
+    -webkit-transform-origin: 50% 100% 0;
+    -moz-transform-origin: 50% 100% 0;
+    -ms-transform-origin: 50% 100% 0;
+    transform-origin: 50% 100% 0;
+}
+.Den-left-red-bar,
+.Den-right-red-bar {
+    background-color: red;
+}
+.Den-left-blue-bar,
+.Den-right-blue-bar {
+    background-color: #3af;
+}
+.Den-black-bar {
+    background-color: black;
+}
+.Den-white-bar {
+    width: 1.878612716763006%;
+    height: 5.491329479768786%;
+    position: absolute;
+    background-color: white;
+    top: 21.38728323699422%;
+    left: 49.228323699421965%;
+    -webkit-transform-origin: 50% 402.631578947368421% 0;
+    -moz-transform-origin: 50% 402.631578947368421% 0;
+    -ms-transform-origin: 50% 402.631578947368421% 0;
+    transform-origin: 50% 402.631578947368421% 0;
+}
+.Den-red-fading-bar {
+    width: 1.878612716763006%;
+    height: 5.491329479768786%;
+    position: absolute;
+    background-color: red;
+    top: 21.38728323699422%;
+    left: 49.228323699421965%;
+    -webkit-transform-origin: 50% 402.631578947368421% 0;
+    -moz-transform-origin: 50% 402.631578947368421% 0;
+    -ms-transform-origin: 50% 402.631578947368421% 0;
+    transform-origin: 50% 402.631578947368421% 0;
+}
+.Den-blue-fading-bar {
+    width: 1.878612716763006%;
+    height: 5.491329479768786%;
+    position: absolute;
+    background-color: #3af;
+    top: 21.38728323699422%;
+    left: 49.228323699421965%;
+    -webkit-transform-origin: 50% 402.631578947368421% 0;
+    -moz-transform-origin: 50% 402.631578947368421% 0;
+    -ms-transform-origin: 50% 402.631578947368421% 0;
+    transform-origin: 50% 402.631578947368421% 0;
+}
+.Den-left-digit-clip {
+    position: absolute;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 2;
+    width: 14.450867052023121%;
+    height: 21.098265895953757%;
+    top: 32.369942196531792%;
+    left: 36.994219653179191%;
+}
+.Den-right-digit-clip {
+    position: absolute;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 2;
+    width: 14.450867052023121%;
+    height: 21.098265895953757%;
+    top: 32.369942196531792%;
+    left: 48.554913294797688%;
+}
+
+/*
+    width: 50px;
+    height: 73px;
+*/
+
+.Den-left-digit,
+.Den-right-digit {
+    pointer-events: none;
+    width: 1000%;
+    height: 100%;
+    background-image: url(numbers.png);
+    background-size: 100% 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.Den-icon {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    width: 18.497109826589595%;
+    height: 18.497109826589595%;
+    left: 16.606802766547496%;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-size: 18.497109826589595% 18.497109826589595%;
+}

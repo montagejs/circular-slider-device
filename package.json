@@ -1,0 +1,15 @@
+{
+    "name": "circular-slider-device",
+    "version": "1.0.0",
+    "dependencies": {
+        "montage": "montagejs/montage#master"
+    },
+    "devDependencies": {
+        "montage-testing": "~0.4.0"
+    },
+    "exclude": [
+        "run-tests.html",
+        "test"
+    ],
+    "bundle": [ "ui/main.reel" ]
+}
